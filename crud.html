@@ -86,12 +86,12 @@
             <tbody id="tablebody"></tbody>
         </table>
     </div>
-    <!-- // vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv// -->
+    <!-- irshad -->
     <script>
         let array = []
         let selectedIndex;
         let selectedRow = []
-        // vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv//
+        // irshad
 
         function printElement(data) {
             let element = document.getElementById('tablebody');
@@ -112,7 +112,7 @@
             element.innerHTML = row
         }
 
-        // vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv//
+        // irshad
         function pushValue() {
             let data = document.getElementById('input').value;
             array.push(data)
@@ -120,24 +120,24 @@
             document.getElementById('input').value = ''
         }
 
-        // vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv//
+        // irshad
         function deleteRow(index) {
             array.splice(index, 1)
             printElement(array)
         }
-        // vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv//
+        // irshads
         function editElemet(index) {
             selectedIndex = index
             document.getElementById('input').value = array[index]
         }
-        // vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv//
+        // irshads
         function elementUpdate() {
             let value = document.getElementById('input').value;
             array[selectedIndex] = value;
             printElement(array)
             document.getElementById(input).value = ''
         }
-        // vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv//
+        // irshads
         function checkClick(evet, index) {
             if (evet.checked) {
                 selectedRow.push(index)
@@ -157,7 +157,7 @@
             }
             // console.log(selectedRow)
         }
-        // vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv//
+        // irshads
         function boxDelete() {
             let deleteallButton = document.getElementById('deleteallButton')
             let remainingItems = [];
